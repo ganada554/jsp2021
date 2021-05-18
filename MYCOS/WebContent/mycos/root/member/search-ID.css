@@ -1,0 +1,126 @@
+/* 리셋 설정 */
+
+html,body{
+    height: 100%;
+    margin:0;
+}
+/* a태그 리셋 */
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+ul{
+    /* 쩜 없애기 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important; 
+}
+
+.menu{
+    /* display: inline-block; */
+    
+    border-bottom: 1px solid #9e9e9e;
+}
+
+    .menu ul{
+        /* display: inline-block; */
+        display: flex;
+        flex-direction: row;
+    }
+
+        .id-search{
+            background-color: rgb(255, 224, 166);
+        }
+
+        .id-search,
+        .pw-search{
+            border-right: 1px solid #9e9e9e;
+        }
+
+            .menu ul li a{
+                padding: 10px;
+                /* padding-left: 20px; */
+                height: 50px;
+                line-height: 50px;
+                
+                width: 120px;
+            }
+
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 20px;
+}
+
+
+body>section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+body>section>h1{
+    margin: 0;
+    /* padding-right: 123px;
+    padding-left: 123px; */
+    align-self: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+.id-form{
+    margin-top: 0;
+}
+
+    .login-form>form,div{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form>input{
+        width: 100%;
+        border-radius: 30px;
+    }
+
+
+
+.btn{
+   width: 336px;
+
+   margin-top: 30px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.search-btn{
+    display: inline-block;
+}
+    .search-btn>input{
+        height: 37px;
+    }
+
+.submit-btn{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    .submit-btn>input
+    {
+        
+        font-size: 14px;
+        width: 115px;
+        height: 45px;
+    }

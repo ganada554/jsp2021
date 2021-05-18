@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        div{
+            font-size: 15px;
+            font-family: 'Jua',sans-serif;
+        }
+    </style>
+    <link href="grade.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/362425ceb9.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="wrap" class="test">
+        <div id="header" class="">
+            <h1>등급</h1>
+        </div>
+        <div id="pop_container">
+            <div class="pop_content">
+                <div class="type" style="margin-top:8px">
+                    <strong> User 님은 <span class="level"><img src="../img/diamond.png" alt="" width="12"
+                                height="12">Diamond 등급</span>입니다.</strong>
+                    <ul class = "fff">
+                        <li class="fst">총 게시코스 <em>n</em> 개</li>
+                        <li>댓글 수 <em>n</em> 개</li>
+                        <style>
+                            ul{
+                               list-style:none;
+                               }
+                            </style>
+                            
+                    </ul>
+                </div>
+                
+      
+                
+                <table class="top">
+                    <!-- <caption><span class="blind">등급 목록</span></caption> -->
+                    <colgroup>
+                        <col width="*">
+                        <col width="*">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">등급</th>
+                            <th scope="row">등급 업 조건</th>
+                        </tr>
+                    </thead>
+
+
+                    
+                    <tbody>
+                        <tr>
+                            <th scope="row"><strong><img src="../img/ruby.png" alt="Ruby" width="12"
+                                        height="12">Ruby</strong></th>
+                            <td>
+                                <div class="lev">
+                                    <p>여행을 막 떠난 회원</p>
+                                    <ul class = "pong">
+                                        <li><span class="level"> 
+                                            <i class="fas fa-level-up-alt fa-1x"></i> 자동등업 : 회원가입 시 자동 등업</i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"><strong><img src="../img/sapphire.png" alt="sapphire" width="12"
+                                        height="12">Sapphire</strong></th>
+                            <td>
+                                <div class="lev">
+                                    <p>여행에 익숙해진 회원</p>
+                                    <ul class = "pong">
+                                        <li><span class="level">
+                                            <i class="fas fa-level-up-alt fa-1x"></i> 자동등업 :</span> 게시코스 <em>n</em>개, 추천<em>n</em>개 이상 코스
+                                    조건 충족시 등업
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"><strong><img src="../img/emerald.png" alt="emerald" width="14"
+                                        height="14">Emerald</strong></th>
+                            <td>
+                                <div class="lev">
+                                    <p>여행을 즐기기 시작한 회원</p>
+                                    <ul class = "pong">
+                                        <li><span class="level">
+                                            <i class="fas fa-level-up-alt fa-1x"></i> 자동등업 :</span> 게시코스 <em>n</em>개, 추천<em>n</em>개 이상 코스
+                                        조건 충족시 등업
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"><strong><img src="../img/diamond.png" alt="" width="12"
+                                        height="12">Diamond</strong></th>
+                            <td>
+                                <div class="lev">
+                                    <p>여행에 대해 전문적인 회원</p>
+                                    <ul class = "pong">
+                                        <li><span class="level">
+                                            <i class="fas fa-level-up-alt fa-1x"></i> 등업게시판 :</span> 게시코스 <em>n</em>개, 추천<em>n</em>개 이상 코스
+                                        조건 충족시 등업
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <ul class ="pin">
+                        <li>자동등업 : 관리자가 설정한 조건을 만족하면 신청 없이 등업이 됩니다.</li>
+                        <p></p>
+                        <li>등업게시판 : 관리자가 설정한 조건을 만족하면 등업 신청이 가능합니다. 관리자 수락을 거쳐 등업됩니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="exit">
+            <a href="javascript:self.close();" class="button"><strong>닫기</strong></a>
+        </div>
+    </div>
+</body>
+
+</html>

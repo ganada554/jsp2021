@@ -1,0 +1,118 @@
+/* 리셋 설정 */
+
+html,body{
+    height: 100%;
+    margin:0;
+}
+/* a태그 리셋 */
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+ul{
+    /* 쩜 없애기 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    margin:0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important; 
+}
+
+:root{
+    --basic-color:#f7f7f7;
+    --border-color:#dfdfdf;
+    --form-color: rgb(231, 226, 250);
+    --form-border-color: rgb(86, 69, 148);
+}
+
+/*--------------------------------------------------------*/
+
+body>section{
+    display: flex;
+    justify-content: center;    
+}
+
+form{
+    margin-top: 50px;
+    width: 80%;
+    height: 600px;
+    background-color: var(--form-color) ;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--border-color);
+    padding: 10px;
+}
+
+form>input,
+.submit-btn>input{
+    width: 70%;
+    height: 10px;
+    border-radius: 8px;
+    border: rgba(0, 0, 0, 0.301) 2px solid;
+    background: none;
+    outline: none; /*클릭하면 생기는 테두리*/
+    padding: 10px;
+    transition: 0.2s ease-in;
+}
+
+form>input:focus,
+.submit-btn>input:focus{
+        width: 90%;
+        border: var(--form-border-color) 2px solid;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 35px;
+    border: 0;
+    padding: 0;
+    border-radius: 50px;
+    border: var(--form-border-color) 2px solid;
+    background: none;
+    cursor: pointer;
+}
+
+input[value="중복 확인"]{
+    margin-left: auto;
+    margin-top: 5px;
+    margin-right: 10%;
+    height: 5%;
+}
+
+strong{
+    margin-right: auto;
+    margin-top: 15px;
+    padding-left: 5%;
+}
+
+.age-form,
+.gender-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.age-form>*,
+.gender-form>*{
+    margin-top: 15px;
+}
+
+input[type="radio"]{
+    margin-right: 10%;
+}
+
+input[value="제출"]{
+    margin-top: 40px;
+}

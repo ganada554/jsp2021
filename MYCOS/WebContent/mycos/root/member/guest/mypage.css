@@ -1,0 +1,208 @@
+/* 리셋 설정 */
+
+html,body{
+    height: 100%;
+    margin:0;
+}
+/* a태그 리셋 */
+a{
+    color: initial !important;
+    text-decoration: none !important;
+}
+
+ul{
+    /* 쩜 없애기 */
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.d-none{
+    display: none !important; 
+}
+
+.button{
+    display: inline-block !important;
+    text-indent: -999px !important;
+    overflow: hidden !important;
+}
+
+.truncate{
+    white-space: nowrap !important;
+    overflow: hidden  !important;
+    text-overflow: ellipsis !important;
+}
+
+/*----------공통 스타일--------------------------------------------------------------------*/
+
+:root{
+    --basic-color:#f7f7f7;
+    --border-color:#dfdfdf;
+}
+
+/*-------------------------------------------------*/
+.root{
+    height: 100%;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom:1px rgb(184, 184, 184) solid;
+    height: 250px;
+    background: var(--basic-color);
+}
+
+    .fa-user-circle{
+        margin-top: 5%;
+    }
+
+    .name{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 5%;
+    }
+
+    .status{
+        font-size: 16px;
+        margin-top: 3%;
+    }
+
+    .sns{
+        display: flex;
+        width: 30%;
+        height: 30%;
+        align-items: center;
+        justify-content: space-around;
+    }
+        
+
+.search{
+    margin-top: 5%;
+}
+
+    .search fieldset>div{
+        width: 30px;
+        height: 40px;
+        background-color: var(--basic-color);
+        display: flex;
+        justify-content: center;
+        padding-right: 5px;
+        border-radius: 0 8px 8px 0 / 0 8px 8px 0 ;
+        border: 1px  solid var(--border-color);
+        border-left: 0;
+    }
+    
+    .search .button{
+        background : url("image/search-solid.svg") no-repeat center;
+        padding: 0;
+        border:none;
+        width: 20px;
+        background-color: var(--basic-color);
+        border-radius: 20%;
+        }
+
+    fieldset{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+        fieldset>input{
+            width: 70%;
+            background-color: var(--basic-color);
+            border: 1px solid var(--border-color);
+            border-right: 0;
+            height: 40px;
+            padding: 0;
+            border-radius: 8px 0 0 8px / 8px 0 0 8px ;
+        }
+
+
+
+
+.best-course{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+    .best-course>.option-btn{
+        background-color: var(--basic-color);
+        border: 1px solid var(--border-color);
+        text-align: center;
+        line-height: 25px;
+        width: 65px;
+        height: 25px;
+        margin-left: auto;
+        margin-right: 8%;
+    }
+
+    .best-course>.option-btn>div{
+        font-size:13px;
+    }
+
+    .fa-caret-down{
+        padding-left: 5px;
+    }
+    
+    .best-course .course-title>li:first-child{
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 10%;
+        padding-right: 2%;
+        display: inline-block;
+    }
+
+    .best-course>section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course{
+        border: 1px solid var(--border-color);
+        background-color: var(--basic-color);
+        border-radius: 15px;
+        width: 85%;
+        margin-top: 5%;
+    }
+    
+
+        .title{
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .course-info{
+            display: flex;
+            font-size: 15px;
+            padding:0 0 5px 0;
+            margin-left: 10px;
+        }
+
+        .date{
+            font-size: 13px;
+            padding: 5px;
+            padding-left: 8%;
+        }
+
+        .thumbs-up{
+            padding-right: 15px;
+        }
+        .thumbs-up>span{
+            padding-left: 5px;
+            color: rgb(255, 218, 55);
+        }
+
+        .fa-comment-dots,
+        .fa-thumbs-up{
+            padding-right: 3px;
+        }

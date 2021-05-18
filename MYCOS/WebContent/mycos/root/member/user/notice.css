@@ -1,0 +1,29 @@
+/* 리셋 설정 */
+
+html,body{
+    height: 100%;
+    margin:0;
+}
+/* a태그 리셋 */
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+ul{
+    /* 쩜 없애기 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important; 
+}
+
+:root{
+    --basic-color:#f7f7f7;
+    --border-color:#dfdfdf;
+    --form-color: rgba(189, 227, 253, 0.521);
+    --form-border-color: rgb(49, 173, 255);
+}

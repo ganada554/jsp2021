@@ -1,0 +1,114 @@
+/* 리셋 설정 */
+
+html,body{
+    height: 100%;
+    margin:0;
+}
+/* a태그 리셋 */
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+ul{
+    /* 쩜 없애기 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important; 
+}
+
+.button,
+.img{
+    display: inline-block;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+/*----------공통 스타일--------------------------------------------------------------------*/
+
+:root{
+    --basic-color:#f7f7f7;
+    --border-color:#dfdfdf;
+    --border-color-dark : rgb(211, 211, 211);
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+#root{
+
+}
+
+.info-box-section{
+    border-bottom: 6px solid var(--basic-color);
+}
+
+    .info-box{
+        display: flex;
+        height: 50px;
+        margin: 20px;
+        align-items: center;
+    }
+
+    .info-box>div{
+        padding-left: 10px;
+    }
+
+    .info-box>a:last-child{
+        padding-left: 20px;
+    }
+
+    .user-name{
+        display: flex;
+        align-items: center;
+    }
+
+    .user-name>span:first-child{
+        font-weight: bold;
+        font-size: 20px;
+        padding-right: 5px;
+    }
+    
+    .user-name>div:last-child{
+        width: 15px;
+        height: 15px;
+        background:url("../image/diamond.png") no-repeat center;
+    }
+
+    .fa-times{
+        position: fixed;
+        top:30px;
+        right: 40px;
+    }
+
+
+    .aside-list>div{
+        border-bottom: 3px solid var(--basic-color);
+        padding-left: 25px;
+        display: flex;
+        margin-left: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+
+    }
+
+    .aside-list>div>i{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .aside-list>div>div{
+        padding-left: 20px;
+    }
+
+    .fa-toggle-off{
+        margin-left: auto;
+        padding-right: 30px;
+    }

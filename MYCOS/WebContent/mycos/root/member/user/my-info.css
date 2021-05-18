@@ -1,0 +1,71 @@
+
+a:visited{
+    color: #eeeeee;
+}
+
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    line-height: 45px;
+}
+.logo{
+    font-size: 36px;
+}
+
+.search{
+    font-size: 24px;
+}
+
+.info{
+    color: #888888;
+    padding-left: 15px;
+}
+
+ul{
+    padding: 0 10px;
+    list-style: none;
+}
+
+ul>li{
+    border: #444444 solid 1px;
+    margin: 8px;
+    color: #888888;
+    font-weight: bold;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.profile-area,
+.pwd-area,
+.recent-area,
+.SNS-area,
+.leave-area{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 25px;
+    justify-content: left;
+}
+.userName{
+    padding-left: 25px;
+}
+.pwd-text{
+    padding-left: 10px;
+}
+.list-posts{
+    padding-left: 10px;
+}
+
+.SNS-area>ul{
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    padding-right: 20px;
+    float:right;
+}
+p.tit + p.sub{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}

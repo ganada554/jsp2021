@@ -1,0 +1,65 @@
+/* 리셋 설정 */
+
+html,body,h1{
+    height: 100%;
+    margin:0;
+}
+/* a태그 리셋 */
+a{
+    color: initial !important;
+    text-decoration: none !important;
+}
+
+ul{
+    /* 쩜 없애기 */
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.d-none{
+    display: none !important; 
+}
+
+.button{
+    display: inline-block !important;
+    text-indent: -999px !important;
+    overflow: hidden !important;
+}
+
+.truncate{
+    white-space: nowrap !important;
+    overflow: hidden  !important;
+    text-overflow: ellipsis !important;
+}
+
+/*----------공통 스타일--------------------------------------------------------------------*/
+
+:root{
+    --basic-color:#f7f7f7;
+    --border-color:#dfdfdf;
+}
+
+/*-------------------------------------------------*/
+
+#header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    #header>a:nth-child(2){
+        font-weight: bold;
+        padding-left: 15px;
+
+    }
+
+    .fa-bars{
+        padding-right: 18px;
+    }
+
+  
+
+
+

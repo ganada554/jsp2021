@@ -1,0 +1,78 @@
+/* 리셋 설정 */
+
+html,body{
+    height: 100% !important;
+    margin:0 !important;
+    padding:0;
+}
+/* a태그 리셋 */
+a{
+    color: initial !important;
+    text-decoration: none !important;
+}
+
+ul,li{
+    /* 쩜 없애기 */
+    list-style: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.d-none{
+    display: none !important; 
+}
+
+.button{
+    display: inline-block !important;
+    text-indent: -999px !important;
+    overflow: hidden !important;
+}
+
+input{
+    margin:0;
+    padding:0;
+}
+
+/*----------공통 스타일--------------------------------------------------------------------*/
+
+:root{
+    --basic-color:#979797;
+}
+
+body{
+    background-color: brown;
+}
+
+.bottom-bar{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom-bar>div{
+    width: 30px;
+    display: flex;
+    line-height: 50px;
+}
+
+
+.bottom-bar>div>a>input{
+    border:0;
+    width: 30px;
+    height: 35px;
+    
+    }
+
+        .bottom-bar>div>a:first-child>div{
+            background: url("image/bell-regular.svg") no-repeat;
+        }
+
+        .bottom-bar>div>a:nth-child(2)>div{
+            background: url("image/pen-solid.svg") no-repeat;
+        }
+
+        .bottom-bar>div>a:last-child>div{
+            background: url("image/user-regular.svg") no-repeat;
+        }
