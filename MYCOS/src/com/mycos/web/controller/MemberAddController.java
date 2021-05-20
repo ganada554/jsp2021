@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.mycos.web.entity.Member;
 import com.mycos.web.service.MemberService;
 
-@WebServlet("member/guest/add")
+@WebServlet("/mycos/root/member/guest/add")
 public class MemberAddController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
