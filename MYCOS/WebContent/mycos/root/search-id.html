@@ -5,45 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="search-ID.css" type="text/css" rel="stylesheet">
+    <link href="search-id.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/362425ceb9.js" crossorigin="anonymous">
     </script>
     <title>아이디 찾기</title>
 </head>
 
 <body>
-    <section id="root">
+    <nav class="menu">
+        <ul>
+            <li class="select id-search">아이디 찾기</li>
+            <li class=" pw-search"><a href="search-password.html">비밀번호 찾기</a></li>
+        </ul>
+    </nav>
+    
+    <section class="form">
 
-        <nav class="menu">
-            <ul>
-                <li class="id-search"><a href="">아이디 찾기</a></li>
-                <li class="pw-search"><a href="">비밀번호 찾기</a></li>
-            </ul>
-        </nav>
-        
-        <section class="login-form" action=""> 
+        <form class="login-form" action=""> 
+            <h2>아이디 찾기</h2>
     
-            <h1>아이디 찾기</h1>
-    
-    
-            <form class="id-form">
-                <strong>이름*</strong>
+            <section class="id-form">
+                <div>이름*</div>
                 <input type="text" name="name" value="">
-            </form>
+            </section>
     
-            <form>
-                <strong>이메일 주소*</strong>
+            <section>
+                <div>이메일 주소*</div>
                 <input type="email" name="email" value="">
-            </form>
+            </section>
     
             <section class="btn">
-                
-    
                 <div class="submit-btn">
                     <input type="submit" value="아이디 찾기">
                 </div>
             </section>
-        </section>
+        </form>
     </section>
 
 </body>

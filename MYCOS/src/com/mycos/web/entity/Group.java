@@ -5,7 +5,7 @@ public class Group {
 	//'ID','NAME','USER_ID'
 	
 	private int id;
-	private String namep;
+	private String name;
 	private int user_id;
 	
 	public Group() {
@@ -14,7 +14,7 @@ public class Group {
 	
 	public Group(int id, String namep, int user_id) {
 		this.id = id;
-		this.namep = namep;
+		this.name = namep;
 		this.user_id = user_id;
 	}
 
@@ -24,11 +24,11 @@ public class Group {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getNamep() {
-		return namep;
+	public String getName() {
+		return name;
 	}
-	public void setNamep(String namep) {
-		this.namep = namep;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getUser_id() {
 		return user_id;
@@ -39,7 +39,7 @@ public class Group {
 
 	@Override
 	public String toString() {
-		return "Group [id=" + id + ", namep=" + namep + ", user_id=" + user_id + "]";
+		return "Group [id=" + id + ", name=" + name + ", user_id=" + user_id + "]";
 	}
 	
 	

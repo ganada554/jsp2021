@@ -14,14 +14,15 @@ public class Member {
 	private String birthday;
 	private Date regdate;
 	private String image;
+	private String status;
 	
 	public Member() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	
+
 	public Member(int id, String nicname, String user_id, String email, String password, String gender, String birthday,
-			Date regdate, String image) {
+			Date regdate, String image, String status) {
 		this.id = id;
 		this.nicname = nicname;
 		this.user_id = user_id;
@@ -31,8 +32,18 @@ public class Member {
 		this.birthday = birthday;
 		this.regdate = regdate;
 		this.image = image;
+		this.status = status;
 	}
 
+
+	public String getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
 
 	public int getId() {
@@ -127,18 +138,13 @@ public class Member {
 	}
 
 
-
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", nicname=" + nicname + ", user_id=" + user_id + ", email=" + email + ", password="
 				+ password + ", gender=" + gender + ", birthday=" + birthday + ", regdate=" + regdate + ", image="
-				+ image + "]";
+				+ image + ", status=" + status + "]";
 	}
 
 
-
-	
-	
-	
 	
 }

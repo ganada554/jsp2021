@@ -6,7 +6,7 @@ public class Course {
 	
 	//'MEMBER_ID','NICNAME','REGDATE','HIT','TITLE','OPEN','CONTENT','ID','PG_RATE'
 
-	private String member_id;
+	private String user_id;
 	private String nicname;
 	private Date regdate;
 	private int hit;
@@ -20,9 +20,9 @@ public class Course {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Course(String member_id, String nicname, Date regdate, int hit, String title, int open, String content,
+	public Course(String user_id, String nicname, Date regdate, int hit, String title, int open, String content,
 			int id, int pg_rate) {
-		this.member_id = member_id;
+		this.user_id = user_id;
 		this.nicname = nicname;
 		this.regdate = regdate;
 		this.hit = hit;
@@ -33,12 +33,12 @@ public class Course {
 		this.pg_rate = pg_rate;
 	}
 
-	public String getMember_id() {
-		return member_id;
+	public String getUser_id() {
+		return user_id;
 	}
 
-	public void setMember_id(String member_id) {
-		this.member_id = member_id;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 
 	public String getNicname() {
@@ -107,7 +107,7 @@ public class Course {
 
 	@Override
 	public String toString() {
-		return "Course [member_id=" + member_id + ", nicname=" + nicname + ", regdate=" + regdate + ", hit=" + hit
+		return "Course [user_id=" + user_id + ", nicname=" + nicname + ", regdate=" + regdate + ", hit=" + hit
 				+ ", title=" + title + ", open=" + open + ", content=" + content + ", id=" + id + ", pg_rate=" + pg_rate
 				+ "]";
 	}

@@ -54,7 +54,7 @@ ul{
 
     .name>div:last-child{
         font-weight: bold;
-        font-size: 35px;
+        font-size: 25px;
     }
 
 .search{
@@ -74,7 +74,7 @@ ul{
     }
     
     .search .button{
-        background : url("image/search-solid.svg") no-repeat center;
+        background : url("../../image/search-solid.svg") no-repeat center;
         padding: 0;
         border:none;
         width: 20px;

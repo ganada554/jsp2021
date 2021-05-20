@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.mycos.web.entity.Member;
-import com.mycos.web.service.MemberService;
+import com.mycos.web.service.jdbcMemberService;
 
 @WebServlet("/mycos/root/member/guest/add")
 public class MemberAddController extends HttpServlet {
@@ -24,7 +24,7 @@ public class MemberAddController extends HttpServlet {
 		String gender = request.getParameter("gender");
 		String birthday = request.getParameter("birthday");
 		
-		MemberService memberservice = new MemberService();
+		jdbcMemberService memberservice = new jdbcMemberService();
 		try {
 			Member member = new Member();
 			member.setNicname(nicname);

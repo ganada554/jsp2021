@@ -1,5 +1,5 @@
 package com.mycos.web.service;
 
-public interface MemberService {
+public interface GroupService {
 
 }

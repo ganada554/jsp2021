@@ -1,17 +1,17 @@
-/* ë¦¬ì…‹ ì„¤ì • */
+/* ¸®¼Â ¼³Á¤ */
 
 html,body{
     height: 100%;
     margin:0;
 }
-/* aíƒœê·¸ ë¦¬ì…‹ */
+/* aÅÂ±× ¸®¼Â */
 a{
     color: initial !important;
     text-decoration: none !important;
 }
 
 ul{
-    /* ì©œ ì—†ì• ê¸° */
+    /* ÂÀ ¾ø¾Ö±â */
     list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -33,7 +33,7 @@ ul{
     text-overflow: ellipsis !important;
 }
 
-/*----------ê³µí†µ ìŠ¤íƒ€ì¼--------------------------------------------------------------------*/
+/*----------°øÅë ½ºÅ¸ÀÏ--------------------------------------------------------------------*/
 
 :root{
     --basic-color:#f7f7f7;
@@ -123,13 +123,26 @@ ul{
             border-radius: 8px 0 0 8px / 8px 0 0 8px ;
         }
 
+.group{
+    display: flex;
+    flex-direction: row;
+    margin: 9%;
 
+}
+
+    .group>*{
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+    }
 
 
 .best-course{
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
+    --margin-top: 15%;
 }
 
     .best-course>.option-btn{
@@ -150,6 +163,13 @@ ul{
     .fa-caret-down{
         padding-left: 5px;
     }
+
+    .best-course .course-title
+    {
+        display: flex;
+        border: 1px 0;
+        align-items: center;
+    }
     
     .best-course .course-title>li:first-child{
         font-weight: bold;
@@ -157,6 +177,11 @@ ul{
         padding-left: 10%;
         padding-right: 2%;
         display: inline-block;
+    }
+
+    .best-course .course-title>div:last-child{
+        margin-right: auto;
+        font-weight: bold;
     }
 
     .best-course>section{
