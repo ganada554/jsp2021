@@ -35,6 +35,10 @@
             <div class="submit-btn">
                 <input type="submit" value="제출">
             </div>
+            
+            <div>
+            	<input type="button" value="충돌시험">
+            </div>
         </section>
     </section>
 </body>
