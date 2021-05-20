@@ -16,7 +16,6 @@ public class MemberAddController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		System.out.println("o7777777777777777777777777777777777777777777777777");
-		System.out.println("o8888888888888888888888888888888888888888888888888");
 		
 		String nicname = request.getParameter("nicname");
 		String id = request.getParameter("id");
