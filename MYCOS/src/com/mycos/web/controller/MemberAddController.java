@@ -28,7 +28,7 @@ public class MemberAddController extends HttpServlet {
 		try {
 			Member member = new Member();
 			member.setNicname(nicname);
-			member.setUserId(id);
+			member.setUser_id(id);
 			member.setEmail(email);
 			member.setPassword(password);
 			member.setGender(gender);
