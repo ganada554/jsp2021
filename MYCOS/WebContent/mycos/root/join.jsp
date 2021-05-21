@@ -16,7 +16,7 @@
 </head>
 <body>
 	<section>
-		<form class="join-form" action="/mycos/root/member/guest/add" method="post"> <!-- 파라미터값을 전송하기 위한 태그 -->
+		<form class="join-form" action="/mycos/add" method="post"> <!-- 파라미터값을 전송하기 위한 태그 -->
 			<h2>회원가입</h2>
 
 			<strong>닉네임*</strong> 

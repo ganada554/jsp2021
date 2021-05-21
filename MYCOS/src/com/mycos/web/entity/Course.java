@@ -6,7 +6,7 @@ public class Course {
 	
 	//'MEMBER_ID','NICNAME','REGDATE','HIT','TITLE','OPEN','CONTENT','ID','PG_RATE'
 
-	private String user_id;
+	private String userId;
 	private String nicname;
 	private Date regdate;
 	private int hit;
@@ -14,15 +14,15 @@ public class Course {
 	private int open;
 	private String content;
 	private int id;
-	private int pg_rate;
+	private int pgRate;
 	
 	public Course() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Course(String user_id, String nicname, Date regdate, int hit, String title, int open, String content,
-			int id, int pg_rate) {
-		this.user_id = user_id;
+	public Course(String userId, String nicname, Date regdate, int hit, String title, int open, String content,
+			int id, int pgRate) {
+		this.userId = userId;
 		this.nicname = nicname;
 		this.regdate = regdate;
 		this.hit = hit;
@@ -30,15 +30,15 @@ public class Course {
 		this.open = open;
 		this.content = content;
 		this.id = id;
-		this.pg_rate = pg_rate;
+		this.pgRate = pgRate;
 	}
 
-	public String getUser_id() {
-		return user_id;
+	public String getUserId() {
+		return userId;
 	}
 
-	public void setUser_id(String user_id) {
-		this.user_id = user_id;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 	public String getNicname() {
@@ -98,17 +98,17 @@ public class Course {
 	}
 
 	public int getPg_rate() {
-		return pg_rate;
+		return pgRate;
 	}
 
-	public void setPg_rate(int pg_rate) {
-		this.pg_rate = pg_rate;
+	public void setPgRate(int pgRate) {
+		this.pgRate = pgRate;
 	}
 
 	@Override
 	public String toString() {
-		return "Course [user_id=" + user_id + ", nicname=" + nicname + ", regdate=" + regdate + ", hit=" + hit
-				+ ", title=" + title + ", open=" + open + ", content=" + content + ", id=" + id + ", pg_rate=" + pg_rate
+		return "Course [userId=" + userId + ", nicname=" + nicname + ", regdate=" + regdate + ", hit=" + hit
+				+ ", title=" + title + ", open=" + open + ", content=" + content + ", id=" + id + ", pgRate=" + pgRate
 				+ "]";
 	}
 	

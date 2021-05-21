@@ -5,8 +5,8 @@ import java.util.Date;
 public class BookMark {
 	
 	//'USER_ID','COURSE_ID','REGDATE'
-	private int user_id;
-	private int course_id;
+	private int userId;
+	private int courseId;
 	private Date regdate;
 	
 	public BookMark() {
@@ -14,25 +14,25 @@ public class BookMark {
 	}
 	
 	
-	public BookMark(int user_id, int course_id, Date regdate) {
+	public BookMark(int userId, int courseId, Date regdate) {
 		super();
-		this.user_id = user_id;
-		this.course_id = course_id;
+		this.userId = userId;
+		this.courseId = courseId;
 		this.regdate = regdate;
 	}
 
 
-	public int getUser_id() {
-		return user_id;
+	public int getUserId() {
+		return userId;
 	}
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public int getCourse_id() {
-		return course_id;
+	public int getCourseId() {
+		return courseId;
 	}
-	public void setCourse_id(int course_id) {
-		this.course_id = course_id;
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
 	}
 	public Date getRegdate() {
 		return regdate;
@@ -44,7 +44,7 @@ public class BookMark {
 
 	@Override
 	public String toString() {
-		return "BookMark [user_id=" + user_id + ", course_id=" + course_id + ", regdate=" + regdate + "]";
+		return "BookMark [userId=" + userId + ", courseId=" + courseId + ", regdate=" + regdate + "]";
 	}
 	
 	

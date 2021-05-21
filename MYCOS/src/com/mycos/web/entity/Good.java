@@ -3,37 +3,37 @@ package com.mycos.web.entity;
 public class Good {
  //'USER_ID','COURSE_ID'
 	
-	private int user_id;
-	private int course_id;
+	private int userId;
+	private int courseId;
 	
 	public Good() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Good(int user_id, int course_id) {
-		this.user_id = user_id;
-		this.course_id = course_id;
+	public Good(int userId, int courseId) {
+		this.userId = userId;
+		this.courseId = courseId;
 	}
 
 	public int getUser_id() {
-		return user_id;
+		return userId;
 	}
 
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setUser_id(int userId) {
+		this.userId = userId;
 	}
 
 	public int getCourse_id() {
-		return course_id;
+		return courseId;
 	}
 
-	public void setCourse_id(int course_id) {
-		this.course_id = course_id;
+	public void setCourse_id(int courseId) {
+		this.courseId = courseId;
 	}
 
 	@Override
 	public String toString() {
-		return "Good [user_id=" + user_id + ", course_id=" + course_id + "]";
+		return "Good [userId=" + userId + ", courseId=" + courseId + "]";
 	}
 	
 	

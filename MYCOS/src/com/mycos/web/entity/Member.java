@@ -7,7 +7,7 @@ public class Member {
 	//   id,nicname,user_id,email,password,gender,birthday,regdate,image
 	private int id;
 	private String nicname;
-	private String user_id;
+	private String userId;
 	private String email;
 	private String password;
 	private String gender;
@@ -21,11 +21,11 @@ public class Member {
 	}
 	
 
-	public Member(int id, String nicname, String user_id, String email, String password, String gender, String birthday,
+	public Member(int id, String nicname, String userId, String email, String password, String gender, String birthday,
 			Date regdate, String image, String status) {
 		this.id = id;
 		this.nicname = nicname;
-		this.user_id = user_id;
+		this.userId = userId;
 		this.email = email;
 		this.password = password;
 		this.gender = gender;
@@ -80,14 +80,14 @@ public class Member {
 	
 	
 	
-	public String getUser_id() {
-		return user_id;
+	public String getUserId() {
+		return userId;
 	}
 
 
 
-	public void setUser_id(String user_id) {
-		this.user_id = user_id;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 
@@ -140,7 +140,7 @@ public class Member {
 
 	@Override
 	public String toString() {
-		return "Member [id=" + id + ", nicname=" + nicname + ", user_id=" + user_id + ", email=" + email + ", password="
+		return "Member [id=" + id + ", nicname=" + nicname + ", userId=" + userId + ", email=" + email + ", password="
 				+ password + ", gender=" + gender + ", birthday=" + birthday + ", regdate=" + regdate + ", image="
 				+ image + ", status=" + status + "]";
 	}

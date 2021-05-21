@@ -4,39 +4,39 @@ public class GroupCourse {
 	
 	//'GROUP_ID','COURSE_ID'
 	
-	private int group_id;
-	private int course_id;
+	private int groupId;
+	private int courseId;
 	
 	public GroupCourse() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public GroupCourse(int group_id, int course_id) {
-		this.group_id = group_id;
-		this.course_id = course_id;
+	public GroupCourse(int groupId, int courseId) {
+		this.groupId = groupId;
+		this.courseId = courseId;
 	}
 
-	public int getGroup_id() {
-		return group_id;
+	public int getGroupId() {
+		return groupId;
 	}
 
-	public void setGroup_id(int group_id) {
-		this.group_id = group_id;
+	public void setGroupId(int groupId) {
+		this.groupId = groupId;
 	}
 
-	public int getCourse_id() {
-		return course_id;
+	public int getCourseId() {
+		return courseId;
 	}
 
-	public void setCourse_id(int course_id) {
-		this.course_id = course_id;
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
 	}
 
 
 
 	@Override
 	public String toString() {
-		return "GroupCourse [group_id=" + group_id + ", course_id=" + course_id + "]";
+		return "GroupCourse [groupId=" + groupId + ", courseId=" + courseId + "]";
 	}
 	
 	

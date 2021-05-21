@@ -5,16 +5,16 @@ public class Manager {
 	//'ID','USER_ID','PASSWORD'
 	
 	private int id;
-	private int user_id;
+	private int userId;
 	private String password;
 	
 	public Manager() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Manager(int id, int user_id, String password) {
+	public Manager(int id, int userId, String password) {
 		this.id = id;
-		this.user_id = user_id;
+		this.userId = userId;
 		this.password = password;
 	}
 
@@ -26,12 +26,12 @@ public class Manager {
 		this.id = id;
 	}
 
-	public int getUser_id() {
-		return user_id;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getPassword() {
@@ -44,7 +44,7 @@ public class Manager {
 
 	@Override
 	public String toString() {
-		return "Manager [id=" + id + ", user_id=" + user_id + ", password=" + password + "]";
+		return "Manager [id=" + id + ", userId=" + userId + ", password=" + password + "]";
 	}
 	
 	

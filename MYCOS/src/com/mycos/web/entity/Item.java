@@ -6,7 +6,7 @@ public class Item {
 	
 	private int id;
 	private String text;
-	private int user_id;
+	private int userId;
 	private int complete; 
 	private String url;
 	
@@ -14,10 +14,10 @@ public class Item {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Item(int id, String text, int user_id, int complete, String url) {
+	public Item(int id, String text, int userId, int complete, String url) {
 		this.id = id;
 		this.text = text;
-		this.user_id = user_id;
+		this.userId = userId;
 		this.complete = complete;
 		this.url = url;
 	}
@@ -38,12 +38,12 @@ public class Item {
 		this.text = text;
 	}
 
-	public int getUser_id() {
-		return user_id;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public int getComplete() {
@@ -64,7 +64,7 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item [id=" + id + ", text=" + text + ", user_id=" + user_id + ", complete=" + complete + ", url=" + url
+		return "Item [id=" + id + ", text=" + text + ", userId=" + userId + ", complete=" + complete + ", url=" + url
 				+ "]";
 	}
 	

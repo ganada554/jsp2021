@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.mycos.web.entity.Member;
 import com.mycos.web.service.jdbcMemberService;
 
-@WebServlet("/mycos/root/member/guest/add")
+@WebServlet("/mycos/add")
 public class MemberAddController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -28,7 +28,7 @@ public class MemberAddController extends HttpServlet {
 		try {
 			Member member = new Member();
 			member.setNicname(nicname);
-			member.setUser_id(id);
+			member.setUserId(id);
 			member.setEmail(email);
 			member.setPassword(password);
 			member.setGender(gender);

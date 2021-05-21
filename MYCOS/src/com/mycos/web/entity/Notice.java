@@ -10,20 +10,20 @@ public class Notice {
 	private String content;
 	private Date regdate;
 	private int open;
-	private int user_id;
+	private int userId;
 	private int hit;
 	
 	public Notice() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Notice(int id, String title, String content, Date regdate, int open, int user_id, int hit) {
+	public Notice(int id, String title, String content, Date regdate, int open, int userId, int hit) {
 		this.id = id;
 		this.title = title;
 		this.content = content;
 		this.regdate = regdate;
 		this.open = open;
-		this.user_id = user_id;
+		this.userId = userId;
 		this.hit = hit;
 	}
 
@@ -67,12 +67,12 @@ public class Notice {
 		this.open = open;
 	}
 
-	public int getUser_id() {
-		return user_id;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public int getHit() {
@@ -86,7 +86,7 @@ public class Notice {
 	@Override
 	public String toString() {
 		return "Notice [id=" + id + ", title=" + title + ", content=" + content + ", regdate=" + regdate + ", open="
-				+ open + ", user_id=" + user_id + ", hit=" + hit + "]";
+				+ open + ", userId=" + userId + ", hit=" + hit + "]";
 	}
 	
 	
