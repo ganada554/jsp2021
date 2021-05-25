@@ -11,8 +11,8 @@ import com.mycos.web.entity.Member;
 
 public class jdbcMemberService {
 	
-	public void setMember(Member member) throws ClassNotFoundException, SQLException {
-		
+	public void addMember(Member member) throws ClassNotFoundException, SQLException { //set은 기존의 데이터 변경 add??
+		int result = 0;
 		System.out.println("ok");
 		
 		String sql = "INSERT INTO MEMBER(NICNAME, USER_ID, EMAIL, PASSWORD, GENDER, BIRTHDAY)"
@@ -30,6 +30,10 @@ public class jdbcMemberService {
 		st.setString(4, member.getPassword());
 		st.setString(5, member.getGender());
 		st.setString(6, member.getBirthday());
+		
+		
+		result = st.executeUpdate(); //몇 개 넣었는지 안쓰더라도 결과 리턴해줘야 한다
+		
 		
 		st.close();
 		con.close();

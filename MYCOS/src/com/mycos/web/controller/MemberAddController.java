@@ -34,13 +34,13 @@ public class MemberAddController extends HttpServlet {
 			member.setGender(gender);
 			member.setBirthday(birthday);
 			
-			memberservice.setMember(member);
+			memberservice.addMember(member);
 			System.out.println(member);
 		} catch (ClassNotFoundException | SQLException e){
 			e.printStackTrace();
 		}
 		
-		response.sendRedirect("login.jsp");
+		response.sendRedirect("/mycos/root/login.jsp");
 	}
 	
 }

@@ -6,16 +6,16 @@ public class Group {
 	
 	private int id;
 	private String name;
-	private int userId;
+	private int memberId;
 	
 	public Group() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Group(int id, String namep, int userId) {
+	public Group(int id, String name, int memberId) {
 		this.id = id;
-		this.name = namep;
-		this.userId = userId;
+		this.name = name;
+		this.memberId = memberId;
 	}
 
 	public int getId() {
@@ -30,16 +30,16 @@ public class Group {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getUserId() {
-		return userId;
+	public int getMemberId() {
+		return memberId;
 	}
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setMemberId(int memberId) {
+		this.memberId = memberId;
 	}
 
 	@Override
 	public String toString() {
-		return "Group [id=" + id + ", name=" + name + ", userId=" + userId + "]";
+		return "Group [id=" + id + ", name=" + name + ", memberId=" + memberId + "]";
 	}
 	
 	
