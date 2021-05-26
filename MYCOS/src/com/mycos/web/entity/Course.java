@@ -5,8 +5,7 @@ import java.util.Date;
 public class Course {
 	
 	//'MEMBER_ID','NICNAME','REGDATE','HIT','TITLE','OPEN','CONTENT','ID','PG_RATE'
-
-	private String userId;
+	private int memberId;
 	private String nicname;
 	private Date regdate;
 	private int hit;
@@ -20,9 +19,8 @@ public class Course {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Course(String userId, String nicname, Date regdate, int hit, String title, int open, String content,
+	public Course(int memberId, String nicname, Date regdate, int hit, String title, int open, String content,
 			int id, int pgRate) {
-		this.userId = userId;
 		this.nicname = nicname;
 		this.regdate = regdate;
 		this.hit = hit;
@@ -32,13 +30,15 @@ public class Course {
 		this.id = id;
 		this.pgRate = pgRate;
 	}
+	
+	
 
-	public String getUserId() {
-		return userId;
+	public int getMemberId() {
+		return memberId;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setMemberId(int memberId) {
+		this.memberId = memberId;
 	}
 
 	public String getNicname() {
@@ -97,17 +97,19 @@ public class Course {
 		this.id = id;
 	}
 
-	public int getPg_rate() {
+	public int getPgRate() {
 		return pgRate;
 	}
 
 	public void setPgRate(int pgRate) {
 		this.pgRate = pgRate;
 	}
+	
+	
 
 	@Override
 	public String toString() {
-		return "Course [userId=" + userId + ", nicname=" + nicname + ", regdate=" + regdate + ", hit=" + hit
+		return "Course [ memberId="+ memberId  + ", nicname=" + nicname + ", regdate=" + regdate + ", hit=" + hit
 				+ ", title=" + title + ", open=" + open + ", content=" + content + ", id=" + id + ", pgRate=" + pgRate
 				+ "]";
 	}

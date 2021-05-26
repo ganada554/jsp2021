@@ -1,5 +1,7 @@
 package com.mycos.web.entity;
 
+import java.util.Date;
+
 public class Group {
 	
 	//'ID','NAME','USER_ID'

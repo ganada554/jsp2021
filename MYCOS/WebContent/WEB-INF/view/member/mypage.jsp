@@ -4,6 +4,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/mycos/css/mypage.css" type="text/css" rel="stylesheet">
+<link href="../../mycos/css/mypage-member.css" type="text/css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/362425ceb9.js"
 	crossorigin="anonymous">
     </script>
@@ -35,15 +36,11 @@
 		</section>
 
 		<section class="group">
+		<c:forEach var="g" items="${group}">
 			<div>
-				<i class="fas fa-folder fa-3x"></i> <span>English</span>
+				<i class="fas fa-folder fa-3x"></i> <span>${g.name }</span>
 			</div>
-			<div>
-				<i class="fas fa-folder fa-3x"></i> <span>Java</span>
-			</div>
-			<div>
-				<i class="fas fa-folder fa-3x"></i> <span>Pasta</span>
-			</div>
+		</c:forEach>
 		</section>
 
 
@@ -66,10 +63,11 @@
 			</div>
 
 			<section>
+			<c:forEach var="c" items="${course}">
 				<div class="course">
-					<div class="date">2020-03-15</div>
+					<div class="date">${c.regdate }</div>
 					<div class="title">
-						<a href="">비전공자 백엔드 코스</a>
+						<a href="">${c.title}</a>
 					</div>
 					<section class="course-info">
 						<div class="thumbs-up">
@@ -78,42 +76,7 @@
 						<span><i class="far fa-comment-dots"></i>2</span>
 					</section>
 				</div>
-				<div class="course">
-					<div class="date">2020-03-15</div>
-					<div class="title truncate">
-						<a href="">자료 구조</a>
-					</div>
-					<section class="course-info">
-						<div class="thumbs-up">
-							<span><i class="fas fa-thumbs-up"></i></span>523
-						</div>
-						<span><i class="far fa-comment-dots"></i>11</span>
-					</section>
-				</div>
-				<div class="course">
-					<div class="date">2020-03-15</div>
-					<div class="title truncate">
-						<a href="">포트폴리오에 쓸 미니 프로젝트를 예쁘게 만드는 법</a>
-					</div>
-					<section class="course-info">
-						<div class="thumbs-up">
-							<span><i class="fas fa-thumbs-up"></i></span>523
-						</div>
-						<span><i class="far fa-comment-dots"></i>4</span>
-					</section>
-				</div>
-				<div class="course">
-					<div class="date">2020-03-15</div>
-					<div class="title truncate">
-						<a href="">방정리하는 법</a>
-					</div>
-					<section class="course-info">
-						<div class="thumbs-up">
-							<span><i class="fas fa-thumbs-up"></i></span>523
-						</div>
-						<span><i class="far fa-comment-dots"></i>5</span>
-					</section>
-				</div>
+			</c:forEach>
 			</section>
 		</section>
 
