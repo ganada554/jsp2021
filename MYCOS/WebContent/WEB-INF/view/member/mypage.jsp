@@ -14,12 +14,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="../../mycos/css/mypage-member.css" type="text/css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/362425ceb9.js"
-	crossorigin="anonymous">
-    </script>
+<script src="https://kit.fontawesome.com/362425ceb9.js" crossorigin="anonymous"></script>
+<script src="/js/mypage.js"></script>
+<script src="/js/slideIn.js"></script>
 <title>mypage-회원버전</title>
 </head>
 <body>
+    <header id="header">
+        <h1 class="d-none">헤더 버튼들</h1>
+        <a href=""><h2>MYCOS</h2></a>
+        <a href=""><i class="fas fa-bars fa-2x"></i></a>
+    </header>
 	<section id="root">
 
 		<section class="user-info">
@@ -51,7 +56,7 @@
 			<ul class="course-title">
 				<li>나의 코스</li>
 				<div>
-					(<span>4</span>)
+					(<span>${courseCount}</span>)
 				</div>
 			</ul>
 
@@ -65,7 +70,7 @@
 			<section>
 			<c:forEach var="c" items="${course}">
 				<div class="course">
-					<div class="date">${c.regdate }</div>
+					<div class="date">${c.regdate}</div>
 					<div class="title">
 						<a href="">${c.title}</a>
 					</div>

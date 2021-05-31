@@ -151,8 +151,24 @@ public class JDBCMypageService implements MypageService {
 	}
 
 	@Override
-	public int getCourseCount(int userId) {
-		return 0;
+	public int getCourseCount(int memberId) throws ClassNotFoundException, SQLException {
+		int count = 0;
+		String sql = "SELECT COUNT(ID) COUNT FROM COURSE WHERE MEMBER_ID="+memberId;
+		String url = "jdbc:oracle:thin:@hi.namoolab.com:1521/xepdb1";
+
+		Class.forName("oracle.jdbc.OracleDriver");
+		Connection con = DriverManager.getConnection(url, "LIKE3", "333");
+		PreparedStatement st = con.prepareStatement(sql);
+		ResultSet rs = st.executeQuery(sql);
+		
+		if(rs.next()) {
+			int cnt = rs.getInt("count");
+			count = cnt;
+		}
+		
+		
+		System.out.printf("countÀÇ °³¼ö : %d",count);
+		return count;
 	}
 
 }

@@ -13,5 +13,5 @@ public interface MypageService  {
 	List<Group> getGroupList(int id) throws ClassNotFoundException, SQLException; //폴더 목록 출력
 	List<Course> getCourseList(int id) throws SQLException, ClassNotFoundException; //코스들 목록
 	
-	int getCourseCount(int id); //코스 전체 개수
+	int getCourseCount(int id) throws ClassNotFoundException, SQLException; //코스 전체 개수
 }

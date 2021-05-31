@@ -44,6 +44,24 @@ ul{
 .root{
     height: 100%;
 }
+
+#header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    #header>a:nth-child(2){
+        font-weight: bold;
+        padding-left: 15px;
+
+    }
+
+    .fa-bars{
+        padding-right: 18px;
+    }
+
 .user-info{
     display: flex;
     flex-direction: column;
